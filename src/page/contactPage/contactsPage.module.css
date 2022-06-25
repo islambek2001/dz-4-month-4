@@ -3,7 +3,9 @@
     position: absolute;
     left: 0;
     top: 30px;
-    background: #cccc;
+    background: yellow;
+
+
 }
 
 
@@ -12,5 +14,9 @@
     position: absolute;
     left: -100%;
     top: 30px;
-    background: #cccc;
+    background: green;
 }
+.button{
+    color: red;
+}
+

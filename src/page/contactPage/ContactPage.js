@@ -22,9 +22,8 @@ class ContactsPage extends React.Component {
         return (
             <div>
 
-                <div>
-                    <button onClick={this.handleMenu}>
-                        MENU
+                    <button onClick={this.handleMenu} className={classes.button}>
+                        ПЕРЕЙТИ
                     </button>
 
 
@@ -35,18 +34,8 @@ class ContactsPage extends React.Component {
                             :
                             classes.menuClose
                         }>
-
-                        <li>page1</li>
-                        <li>page2</li>
-                        <li>page3</li>
                         <User/>
                     </ul>
-
-
-
-
-                </div>
-
 
             </div>
         )

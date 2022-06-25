@@ -1,4 +1,5 @@
 import React from "react";
+import classes from "./user.module.css";
 
 
 
@@ -11,12 +12,16 @@ class User extends React.Component {
     }
 
     handleInput = (e) => {
+        console.log(e)
         this.setState({
                 ...this.state,
                 [e.target.name]: e.target.value
-            }
+
+        }
         )
+
     }
+
 
     onSubmit = () => {
         const data = {
@@ -25,19 +30,20 @@ class User extends React.Component {
             age: this.state.age,
             address: this.state.address
         }
-
         console.log(data)
+
     }
 
     render() {
         return (
             <div>
-                <h1>From</h1>
+                <h1 className={classes.title}>ФОРМА</h1>
                 <input
                     type="text"
                     onChange={this.handleInput}
                     name="name"
                 />
+
 
                 <input
                     type="text"
@@ -57,7 +63,7 @@ class User extends React.Component {
                     name="address"
                 />
 
-                <button onClick={this.onSubmit}>on submit</button>
+                <button onClick={this.onSubmit}>ПУСК</button>
             </div>
         )
     }
@@ -67,7 +73,6 @@ class User extends React.Component {
 const obj = {
     name: "data",
     age: 21
-
 }
 
 console.log(obj[ "age"])
